@@ -1,0 +1,29 @@
+html {
+    background-color: rgb(170, 170, 170);
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: 800px;
+    font-size: 80px;
+    padding: 80px;
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(136, 165, 190);
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 10px solid rgb(0, 0, 0);
+    margin: 0;
+    font: 0/0 transparent;
+}
