@@ -3,10 +3,6 @@ body {
     text-align: center;
 }
 
-button:hover {
-    background-color: rgb(255, 255, 255);
-}
-
 #container {
     width: 400px;
     height: 400px;
@@ -24,4 +20,25 @@ button:hover {
     border: 10px solid rgb(0, 0, 0);
     margin: 0;
     font: 0/0 transparent;
+}
+
+.tic-tac-toe [aria-label="x"] {
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F5f%2FRed_X.svg%2F1200px-Red_X.svg.png&imgrefurl=https%3A%2F%2Fde.m.wikipedia.org%2Fwiki%2FDatei%3ARed_X.svg&tbnid=mt2Lboc5eXvu8M&vet=12ahUKEwiO09P96rP0AhWVEWMBHRLZACgQMygAegQIARB7..i&docid=TL-foca29pXiPM&w=1200&h=1200&q=X&ved=2ahUKEwiO09P96rP0AhWVEWMBHRLZACgQMygAegQIARB7');
+}
+
+.tic-tac-toe [aria-label="o"] {
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd0%2FLetter_o.svg%2F542px-Letter_o.svg.png&imgrefurl=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FDatei%3ALetter_o.svg&tbnid=sWKvOyBvge--2M&vet=12ahUKEwiC_dGo67P0AhUHDhQKHTXTBuEQMygAegUIARCFAQ..i&docid=pt-Vq4_nQhf_hM&w=542&h=1023&q=O&ved=2ahUKEwiC_dGo67P0AhUHDhQKHTXTBuEQMygAegUIARCFAQ');
+}
+
+.tic-tac-toe .highlighted {
+    background-color: yellow;
+}
+
+.warning {
+    color: red;
+}
+
+.success {
+    color: green;
+    background-color: yellow;
 }
