@@ -6,19 +6,19 @@
 
 let number = 15
 
-if(number < 20) {
+if (number < 20) {
     console.log("Mini")
 }
 
 number = 20
 
-if(number > 20 < 50){
+if (number > 20 < 50) {
     console.log("Medium")
 }
 
 number = 60
 
-if(number > 50) {
+if (number > 50) {
     console.log("Large")
 }
 
@@ -31,18 +31,18 @@ if(number > 50) {
 
 number = 5
 
-if(number <= 7) {
+if (number <= 7) {
     console.log("Mini")
 }
 
 number = 50
 
-if(number > 7 < 90) {
+if (number > 7 < 90) {
     console.log("Medium")
 }
 
 number = 99
 
-if(number > 90) {
+if (number > 90) {
     console.log("Large")
 }
