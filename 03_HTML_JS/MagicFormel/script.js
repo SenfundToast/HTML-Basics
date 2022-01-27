@@ -2,19 +2,44 @@
 //Wenn das Ergebnis 4 ist, dann gib aus: 1,2,3,4
 //Wenn das Ergebnis -2 ist dann gib aus 0, -1, -2
 //größe in cm 1.43 / Gewicht in kg -3.4
+document.getElementById("button").addEventListener("click", function() {
+    generate();
+})
 
 function generate() {
-    let value1 = document.getElementById(Größe).value;
-    let value2 = document.getElementById(Gewicht).value;
-    let result = (value1 / value2) - 3.4;
-    Math.floor(result)
-    sort(result)
+    let size = document.getElementById("Größe").value;
+    let weight = document.getElementById("Gewicht").value;
+    let result = (size / weight) - 3.4;
+    console.log(result)
+    printvalues(result)
+
 }
 
-function sort(result) {
-    if (number < 0) {
 
+function printvalues(result) {
+
+    if (result > 0) {
+        let j = "";
+        for (let i = 0; i < result; i++) {
+            j += i + "<br>";
+
+            console.log(i)
+        }
+        document.getElementById("Ausgabewehrt").innerHTML = "Positiv" + " " +
+            j + " (" + result + ") ";
+    } else if (result < 0) {
+        let j = "";
+        for (i = 0; i > result; i--) {
+            j += i - 1 + "<br>";
+            document.getElementById("Ausgabewehrt").innerHTML = "Negativ" + " " +
+                "0 " + j + " (" + result + ") ";
+            console.log(i)
+        }
+    } else {
+        document.getElementById("Ausgabewehrt").innerHTML = "NULL" + " " + 0;
     }
+
+
 
 
 }
