@@ -49,7 +49,7 @@
         function preload() {
             this.load.image('sky', 'assets/sky.png');
             this.load.image('ground', 'assets/ice.png');
-            this.load.image('star', 'assets/star.png');
+            this.load.image('blitz', 'assets/Blitz.png');
             this.load.image('bomb', 'assets/bomb.png');
             this.load.spritesheet('dude', 'assets/dude.png', {
                 frameWidth: 32,
@@ -80,7 +80,7 @@
             player = this.physics.add.sprite(100, 450, 'dude');
 
             //  Player physics properties. Give the little guy a slight bounce.
-            player.setBounce(0.2);
+            player.setBounce(0.4);
             player.setCollideWorldBounds(true);
 
             //  Our player animations, turning, walking left and walking right.
@@ -118,12 +118,12 @@
 
             //  Some stars to collect, 12 in total, evenly spaced 70 pixels apart along the x axis
             stars = this.physics.add.group({
-                key: 'star',
-                repeat: 11,
+                key: 'blitz',
+                repeat: 15,
                 setXY: {
-                    x: 12,
-                    y: 0,
-                    stepX: 70
+                    x: 15,
+                    y: 100,
+                    stepX: 100
                 }
             });
 
@@ -138,7 +138,7 @@
 
             //  The score
             scoreText = this.add.text(16, 16, 'score: 0', {
-                fontSize: '32px',
+                fontSize: '30px',
                 fill: '#F8F8FF'
             });
 
